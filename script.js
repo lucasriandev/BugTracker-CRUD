@@ -37,12 +37,12 @@ function renderizar() {
     divCard.innerHTML = `
     <div class="info">
     <h3>${item.titulo}</h3>
-    <span class='tag'> ${item.nivel}${item.nivel}</span>
+    <span class='tag'> nivel de urgência: ${item.nivel}<br> id: ${item.id}</span>
     </div>
     `;
 
     const btnDelete = document.createElement("button");
-    btnDelete.innerHTML = "❌";
+    btnDelete.innerHTML = "🗑️";
     btnDelete.classList.add("btn-deletar");
 
     btnDelete.addEventListener("click", () => {
