@@ -1,9 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BugTracker 🐞</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>BUG<span>TRACKER</span></h1>
+      </header>
+
+      <form id="form-bug">
+        <input
+          type="text"
+          id="input-titulo"
+          placeholder="Descreva o bug (Ex: Tela branca no login)"
+        />
+
+        <select id="select-nivel">
+          <option value="Baixa">Severidade: Baixa</option>
+          <option value="Média">Severidade: Média</option>
+          <option value="Crítica">Severidade: Crítica 🚨</option>
+        </select>
+
+        <button type="submit" id="btn-salvar">REGISTRAR BUG</button>
+      </form>
+
+      <div id="lista-bugs"></div>
+    </div>
+  </body>
 </html>
