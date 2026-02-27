@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy, monospace;
+}
+
+body {
+  background: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.container {
+  width: 600px;
+  background: #161b22;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+h1 span {
+  color: #ff7b72;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  background: #0d1117;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+}
+
+input,
+select {
+  padding: 12px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  border-radius: 5px;
+  outline: none;
+
+  &:focus {
+    border-color: #58a6ff;
+  }
+}
+
+button#btn-salvar {
+  padding: 12px;
+  background: #238636;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: #2ea043;
+  }
+}
+
+.card-bug {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #21262d;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border-left: 4px solid #8b949e;
+}
+
+.info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  background: #30363d;
+}
+.tag.Baixa {
+  color: #3fb950;
+  border: 1px solid #3fb950;
+}
+.tag.Média {
+  color: #d29922;
+  border: 1px solid #d29922;
+}
+.tag.Crítica {
+  color: #f85149;
+  border: 1px solid #f85149;
+}
+
+button.btn-deletar {
+  background: transparent;
+  border: 1px solid #f85149;
+  color: #f85149;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button.btn-deletar:hover {
+  background: #f85149;
+  color: #fff;
+}
